@@ -1,0 +1,32 @@
+name: Katya Zenina
+description: Portfolio 
+url: http://katyazenina.github.io/
+baseurl: ""
+imagedir: "/images/"
+menu:
+    comics:
+        -
+            name: House
+            url: /house
+        -
+            name: Secret
+            url: /secret
+        -
+            name: "Soft Sands"
+            url: /soft_sands
+    illustration:
+        -
+            name: "Interview Magazine"
+            url: /interview_magazine
+        -
+            name: "Nargis Magazine"
+            url: /nargis_magazine
+gems: [jekyll-paginate]
+paginate: 10 
+paginate_path: "/:num"
+# !! You don't need to change any of the configuration flags below !!
+#
+
+#markdown: redcarpet
+#highlighter: pygments
+permalink: /:title/

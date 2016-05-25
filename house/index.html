@@ -1,0 +1,12 @@
+---
+title: House
+layout: default
+---
+
+{% for image in site.static_files %}
+    {% if image.path contains '/House' %}
+		<item>
+			<a href="{{ site.baseurl }}{{ image.path }}"><img src="{{ site.baseurl }}{{ image.path }}" alt="image" /></a>
+		</item>
+    {% endif %}
+{% endfor %}

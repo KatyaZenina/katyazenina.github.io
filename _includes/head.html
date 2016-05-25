@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Katya Zenina - {{ page.title }}</title>
+		<link rel="shortcut icon" href="/images/favicon.png">
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" >
+	</head>
+	<body>
+		<menu>
+			<section id=menu>
+				<img src="{{ site.baseurl}}/images/k.png" alt="hello" />
+				{% if page.title == "About" %}
+				<a href="{{ site.baseurl }}/" id="about" class="active">About</a>
+				{% else %}
+				<a href="{{ site.baseurl }}/" id="about">About</a>
+				{% endif %}
+				{% for menu in site.menu %}
+					<h2>{{ menu[0] }}</h2>
+					<ul>
+					{% for item in menu[1] %}
+						{% if item.name == page.title %}
+							<li><a href="{{ site.baseurl }}{{ item.url }}" class="active">{{ item.name }}</a></li>
+						{% else %}
+							<li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.name }}</a></li>
+						{% endif %}
+					{% endfor %}
+					</ul>
+				{% endfor %}
+			</section>
+		</menu>
