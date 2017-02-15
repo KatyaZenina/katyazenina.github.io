@@ -14,6 +14,9 @@ menu:
         -
             name: "Soft Sands"
             url: /soft_sands
+        -
+            name: "Points of View"
+            url: /points_of_view
     illustration:
         -
             name: "Interview Magazine"
@@ -21,6 +24,9 @@ menu:
         -
             name: "Nargis Magazine"
             url: /nargis_magazine
+            
+            
+########################            
 gems: [jekyll-paginate]
 paginate: 10 
 paginate_path: "/:num"
