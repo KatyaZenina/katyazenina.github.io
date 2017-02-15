@@ -1,0 +1,12 @@
+---
+title: Points of View
+layout: default
+---
+
+{% for image in site.static_files %}
+    {% if image.path contains '/Points_Of_View' %}
+		<item>
+			<a href="{{ site.baseurl }}{{ image.path }}"><img src="{{ site.baseurl }}{{ image.path }}" alt="image" /></a>
+		</item>
+    {% endif %}
+{% endfor %}
